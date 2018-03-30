@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Pidilite CP-MNT</string>
+    <string name="login_title">REGISTER</string>
+    <string name="login_name">Name</string>
+    <string name="login_id">ID</string>
+    <string name="login_contact">Contact Number</string>
+    <string name="login_email">E-mail ID</string>
+    <string name="version">Version : 1.0</string>
+    <string name="title_activity_settings">Settings</string>
+</resources>

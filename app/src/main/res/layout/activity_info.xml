@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_info"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/backgroundgrey"
+    tools:context="com.debuggerx.pidilitesaleshandler.Activities.InfoActivity">
+
+    <ImageView
+        android:id="@+id/AppIconIM"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_above="@+id/AppTitleName"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/AppTitleName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:gravity="center_horizontal"
+        android:text="@string/app_name"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Widget.PopupMenu.Header"
+        android:textSize="35dp" />
+
+    <TextView
+        android:id="@+id/Versiontxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/AppTitleName"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="10dp"
+        android:text="@string/version"
+        android:textSize="20dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:onClick="gotoDebuggerX"
+        android:gravity="center">
+
+        <TextView
+            android:text="Made by : "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="#24409b"/>
+        <ImageView
+            android:id="@+id/DebuggerX_Image"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            app:srcCompat="@drawable/debuggerx" />
+    </LinearLayout>
+
+
+</RelativeLayout>

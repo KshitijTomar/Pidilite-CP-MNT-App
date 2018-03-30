@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.debuggerx.pidilitesaleshandler.Activities.Main2Activity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/linearLayoutbottom"
+        android:background="#eee"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin">
+
+        <ImageView
+            android:id="@+id/imageViewimg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha=".05"
+            android:src="@drawable/title" />
+
+
+        <LinearLayout
+            android:id="@+id/linearLayoutCenter"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:onClick="sellItemsActi">
+
+                <ImageView
+                    android:id="@+id/SellItemIM"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:src="@drawable/shopping" />
+
+                <TextView
+                    android:id="@+id/SellItemTxt"
+                    android:layout_width="120dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_below="@+id/SellItemIM"
+                    android:text="Sell Items"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:onClick="sellHistoryActi">
+
+                <ImageView
+                    android:id="@+id/SellHistoryIM"
+                    android:layout_width="110dp"
+                    android:layout_height="120dp"
+                    android:paddingTop="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:src="@drawable/monitoring" />
+
+                <TextView
+                    android:id="@+id/SellHistoryTxt"
+                    android:layout_width="110dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_below="@+id/SellHistoryIM"
+                    android:text="Sell History"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayoutbottom"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:background="#FDD835"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <RelativeLayout
+            android:layout_width="50dp"
+            android:layout_height="70dp"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="InfoActi">
+
+            <ImageView
+                android:id="@+id/InfoIM"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/infoicon" />
+
+            <TextView
+                android:id="@+id/Info_Text"
+                android:layout_width="50dp"
+                android:layout_height="20dp"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/InfoIM"
+                android:text="About"
+                android:textAlignment="center"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="50dp"
+            android:layout_height="70dp"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="userDetailsActi">
+
+            <ImageView
+                android:id="@+id/UserDetailsIM"
+                android:layout_width="110dp"
+                android:layout_height="40dp"
+                android:layout_above="@+id/UserDetailsTxt"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/userblk" />
+
+            <TextView
+                android:id="@+id/UserDetailsTxt"
+                android:layout_width="110dp"
+                android:layout_height="20dp"
+                android:text="User Details"
+                android:textAlignment="center"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="50dp"
+            android:layout_height="70dp"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="SettingsActi">
+
+            <ImageView
+                android:id="@+id/SettingsIM"
+                android:layout_width="60dp"
+                android:layout_height="45dp"
+                android:layout_above="@+id/SettingsTxt"
+                android:src="@drawable/settings" />
+
+            <TextView
+                android:id="@+id/SettingsTxt"
+                android:layout_width="60dp"
+                android:layout_height="20dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="5dp"
+                android:text="Settings"
+                android:textAlignment="center"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

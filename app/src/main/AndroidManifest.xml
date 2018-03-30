@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.debuggerx.pidilitesaleshandler">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/YellowTheme"> <!--android:theme="@style/Theme.AppCompat.Light.DarkActionBar"-->
+        <activity
+            android:name=".Activities.LauncherActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activities.Main2Activity"
+            android:theme="@style/YellowTheme" />
+        <activity
+            android:name=".Activities.LoginActivity"
+            android:label="Register" />
+        <activity
+            android:name=".Activities.UserDetailsActivity"
+            android:label="User Details"
+            android:parentActivityName=".Activities.Main2Activity" />
+        <activity
+            android:name=".Activities.Login2Activity"
+            android:label="Edit User Details"
+            android:parentActivityName=".Activities.Main2Activity" />
+        <activity
+            android:name=".Activities.InfoActivity"
+            android:label="Information"
+            android:parentActivityName=".Activities.Main2Activity" />
+        <activity
+            android:name=".Activities.SearchDistributorActivity"
+            android:label="Set Distributor"
+            android:parentActivityName=".Activities.Main2Activity" />
+        <activity
+            android:name=".Activities.SearchLocationActivity"
+            android:label="Set Route/Location of Vendor"
+            android:parentActivityName=".Activities.SearchDistributorActivity" />
+        <activity
+            android:name=".Activities.SearchVendorActivity"
+            android:label="Select Vendor&apos;s Name"
+            android:parentActivityName=".Activities.SearchLocationActivity" />
+        <activity
+            android:name=".Activities.FinalListActivity"
+            android:label="Billing Item list"
+            android:parentActivityName=".Activities.Main2Activity" />
+        <activity
+            android:name=".Activities.BigItemListActivity"
+            android:label="Item&apos;s list"
+            android:parentActivityName=".Activities.FinalListActivity" />
+        <activity
+            android:name=".Activities.SellHistoryActivity"
+            android:label="Sell History"
+            android:parentActivityName=".Activities.Main2Activity" />
+        <activity
+            android:name=".Activities.SettingsActivity"
+            android:label="Settings"
+            android:parentActivityName=".Activities.Main2Activity" />
+    </application>
+
+</manifest>
